@@ -15,7 +15,7 @@ function ProjectCards(props) {
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
           <FaGooglePlay  /> &nbsp;
-          Playstore
+          {"Playstore"}
         </Button>
         {"\n"}
         {"\n"}
