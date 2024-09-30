@@ -5,26 +5,35 @@ import {
   SiPostman,
   SiSlack,
   SiVercel,
-  SiMacos,
+  SiUnity,
+  SiJetbrains,
+  SiDiscord,
 } from "react-icons/si";
+import { FaUnity } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <SiJetbrains /> {/* JetBrains Rider */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiVisualstudiocode /> {/* Visual Studio Code */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiPostman /> {/* Postman */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <SiSlack /> {/* Slack */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <SiDiscord /> {/* Discord */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaUnity /> {/* Unity */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVercel /> {/* Vercel */}
       </Col>
     </Row>
   );

@@ -1,8 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { FaGooglePlay  } from "react-icons/fa";
+import { FaGooglePlay } from "react-icons/fa";
 
 function ProjectCards(props) {
   return (
@@ -13,14 +12,40 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <FaGooglePlay  /> &nbsp;
-          {"Playstore"}
-        </Button>
-        {"\n"}
-        {"\n"}
+
+        {/* Technologies used (Non-clickable labels) */}
+        {props.technologies && (
+          <div style={{ marginBottom: "15px" }}>
+            {props.technologies.map((tech, index) => (
+              <span
+                key={index}
+                style={{
+                  backgroundColor: "#a020f0", // Brighter blue color similar to the Play Store button
+                  color: "white",
+                  padding: "5px 10px",
+                  borderRadius: "5px",
+                  marginRight: "5px",
+                  marginBottom: "5px", // Space between rows of technologies
+                  display: "inline-block",
+                  fontSize: "0.9em",
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {/* Play Store Button */}
+        {props.playstoreLink && props.playstoreLink !== "#" && (
+          <Button variant="primary" href={props.playstoreLink} target="_blank">
+            <FaGooglePlay /> &nbsp;
+            {"Playstore"}
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import pollenPopImage from "../../Assets/Projects/pollen_pop.jpg"; // Updated to .jpg
+import flyingBatImage from "../../Assets/Projects/flying_bat.jpg"; // Updated to .jpg
+import clawRobotHeroImage from "../../Assets/Projects/claw_robot_hero.jpg"; // Updated to .jpg
+import rhinoRobotCarImage from "../../Assets/Projects/rhino_robot_car.jpg"; // Updated to .jpg
+import crystaleImage from "../../Assets/Projects/crystale.jpg"; // Updated to .jpg
+import zombieSurvivalImage from "../../Assets/Projects/zombie_survival.jpg"; // Updated to .jpg
+import kartRacingImage from "../../Assets/Projects/kart_racing.jpg"; // Updated to .jpg
+import scaryGrannyImage from "../../Assets/Projects/scary_granny.jpg"; // Updated to .jpg
 
 function Projects() {
   return (
@@ -23,67 +25,89 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={pollenPopImage}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              title="Pollen Pop"
+              description="A multiplayer match-three game with Web3 integration and PVP functionality. Features Free Play, Tournament, Play for Prize, Story Mode, and PVP modes. Integrated boosters and a dynamic in-game economy with rewards from leaderboard positions and daily milestones."
+              playstoreLink="https://play.google.com/store/apps/details?id=hexagon.pollenpop.game&pcampaignid=web_share"
+              technologies={["Unity3D", "C#", "Firebase", "Colyseus", "Web3"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={flyingBatImage}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Bat Super Hero"
+              description="A superhero game where players take on missions involving rescue operations and combat against enemy groups. Players can transform into various forms to navigate challenges effectively."
+              playstoreLink="https://play.google.com/store/apps/details?id=com.rds.bat.bike.robot.transformation.superhero.games&pcampaignid=web_share"
+              technologies={["Unity3D", "C#", "Google Ads SDK"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={clawRobotHeroImage}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Claw Robot Hero"
+              description="An action-packed superhero game where players embark on missions involving rescues, attacking enemy groups, and fighting hordes of foes. Transform into various forms to tackle different challenges."
+              playstoreLink="https://play.google.com/store/apps/details?id=com.gag.superhero.robot.water.slide.adventure.game&pcampaignid=web_share"
+              technologies={["Unity3D", "C#", "Unity Ads SDK"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={rhinoRobotCarImage}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Rhino Robot Car Transformation"
+              description="An action-packed superhero game where players embark on missions involving rescues, attacking enemy groups, and fighting hordes of foes. Transform into various forms to tackle different challenges."
+              playstoreLink="https://play.google.com/store/apps/details?id=com.gag.rhino.monster.truck.transform.robot.games&pcampaignid=web_share"
+              technologies={["Unity3D", "C#", "Google Ads SDK"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={scaryGrannyImage}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Scary Granny Game"
+              description="A horror escape game where players must solve puzzles and avoid a terrifying antagonist to escape the house. Includes immersive sound design and atmosphere to enhance the horror experience."
+              playstoreLink="https://play.google.com/store/apps/details?id=com.axondev.scary.granny.house.horror.escape&pcampaignid=web_share"
+              technologies={["Unity3D", "C#", "Google Ads SDK"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={zombieSurvivalImage}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Zombie Survival Game"
+              description="A survival shooter game integrated with Roku functionality, where players fight waves of zombies with class-based mechanics. Features a multiplayer mode where players battle each other between waves, with the last player standing declared the winner."
+              playstoreLink="#"
+              technologies={["Unity3D", "C#", "Colyseus", "Multiplayer"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={kartRacingImage}
+              isBlog={false}
+              title="Kart Racing League"
+              description="An exciting multiplayer kart racing game with real-time races and kart customization."
+              playstoreLink="#"
+              technologies={["Unity3D", "C#", "Photon Quantum", "3D Physics"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={crystaleImage}
+              isBlog={false}
+              title="Crystale"
+              description="A strategic card game where players summon creatures and cast spells on elemental tiles."
+              playstoreLink="#"
+              technologies={["Unity3D", "C#", "Colyseus", "TypeScript"]}
             />
           </Col>
         </Row>
